@@ -3,14 +3,14 @@
 Console.WriteLine("Введите число N");
 int x = Convert.ToInt32(Console.ReadLine());
 
-if(x<0){
+
+void Kvadrat(int n)
+{  if(x<0){
     System.Console.WriteLine("не то число");
     }
-void Kvadrat(int n)
-{  
     for (int i = 1; i <= n; i++)
     {
-        Console.WriteLine($"{i}|{i * i}");
+        Console.WriteLine($"{i}|{Math.Pow(i,2)}");
     }
 }
 
